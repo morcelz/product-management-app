@@ -1,0 +1,61 @@
+================================================================================
+                    QUICK START GUIDE - COPY & PASTE COMMANDS
+================================================================================
+
+USE 2 SEPARATE TERMINAL WINDOWS!
+
+================================================================================
+TERMINAL #1 - BACKEND (Spring Boot)
+================================================================================
+
+PowerShell:
+-----------
+cd C:\Users\Lenovo\Desktop\product-management
+.\gradlew.bat bootRun
+
+Command Prompt (cmd):
+---------------------
+cd C:\Users\Lenovo\Desktop\product-management
+gradlew.bat bootRun
+
+Wait for: "Started ProductManagementApplication"
+Keep this terminal open!
+
+================================================================================
+TERMINAL #2 - FRONTEND (React)
+================================================================================
+
+PowerShell:
+-----------
+cd C:\Users\Lenovo\Desktop\product-management\frontend
+npm install
+npm run dev
+
+Command Prompt (cmd):
+---------------------
+cd C:\Users\Lenovo\Desktop\product-management\frontend
+npm install
+npm run dev
+
+Wait for: "Local: http://localhost:3000"
+Keep this terminal open!
+
+================================================================================
+THEN OPEN BROWSER:
+================================================================================
+
+Go to: http://localhost:3000
+
+================================================================================
+IF PORT 8084 IS IN USE:
+================================================================================
+
+PowerShell or CMD:
+------------------
+netstat -ano | findstr :8084
+taskkill /PID <NUMBER> /F
+
+(Replace <NUMBER> with the PID you see)
+
+================================================================================
+
